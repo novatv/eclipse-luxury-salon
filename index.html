@@ -497,12 +497,12 @@ html.js-motion .pgrid .card.in{opacity:1; transform:none}
 }
 
 /* ---------- destacados (slider de productos) ---------- */
-.showcase{padding-bottom:0}
-.showcase .sec-head{margin-bottom:48px}
+.showcase{padding:0}
 .showcase .ps-slider{margin-top:0}
+.showcase + .hero{min-height:0; padding:96px 0 104px}
 .showcase .ps-btn.in{background:var(--sun-night); color:var(--ink)}
 .showcase .ps-btn.in:hover{background:#fff}
-@media (max-width:880px){ .showcase .sec-head{margin-bottom:30px} }
+@media (max-width:880px){ .showcase + .hero{padding:48px 0 64px} }
 
 
 .ps-slider{color:#fff;font-family:"Instrument Sans","Helvetica Neue",Arial,sans-serif;--gold:#E9B44C;--gold-lit:#F2C664;--gold-deep:#B8862B;--ink:#101214;--ps-out:cubic-bezier(.16,1,.3,1);--ps-io:cubic-bezier(.77,0,.175,1);--ps-dur:6500ms;--c1:#0B0B0D;--c1d:#000;--c2:#2A2210}
@@ -711,7 +711,7 @@ html.js-motion .pgrid .card.in{opacity:1; transform:none}
       <ul>
         <li><a href="#metodo">Método</a></li>
         <li><a href="#programas">Programas</a></li>
-        <li><a href="#destacados">Tienda</a></li>
+        <li><a href="#tienda">Tienda</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
@@ -726,7 +726,7 @@ html.js-motion .pgrid .card.in{opacity:1; transform:none}
       <ul>
         <li><a href="#metodo">Método</a></li>
         <li><a href="#programas">Programas</a></li>
-        <li><a href="#destacados">Tienda</a></li>
+        <li><a href="#tienda">Tienda</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
@@ -736,156 +736,7 @@ html.js-motion .pgrid .card.in{opacity:1; transform:none}
 </header>
 
 <main id="top">
-<section class="hero" aria-labelledby="h1">
-  <div class="wrap">
-    <div>
-      <h1 id="h1">Comer bien, <b>sin que sea un proyecto.</b></h1>
-      <p class="sub">Acompañamiento en hábitos de alimentación y descanso, en Bilbao o por videollamada, pensado para durar más de tres semanas.</p>
-      <div class="acts">
-        <a class="btn solid lg" href="https://wa.me/34747421853?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20una%20primera%20cita." target="_blank" rel="noopener">Pedir cita</a>
-        <a class="btn lg" href="#metodo">Cómo trabajo</a>
-      </div>
-    </div>
-    <div class="sky" aria-hidden="true">
-      <div class="corona-wrap"><div class="corona"></div></div>
-      <div class="disc-wrap"><div class="disc"></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="manifesto" aria-label="Tres cosas antes de empezar">
-  <div class="wrap">
-    <div class="row">
-      <h3>Sin dietas cerradas.</h3>
-      <p>Trabajamos sobre lo que ya comes, no sobre una lista que abandonarás en febrero.</p>
-    </div>
-    <div class="row">
-      <h3>Doce semanas, no tres.</h3>
-      <p>Es lo que tarda un hábito en dejar de necesitar fuerza de voluntad. Menos que eso no es un cambio.</p>
-    </div>
-    <div class="row">
-      <h3>Seguimiento de verdad.</h3>
-      <p>Nos escribimos entre sesiones. No te quedas sola con un PDF de recetas.</p>
-    </div>
-  </div>
-</section>
-
-<section class="method" id="metodo">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Cuatro fases, y ninguna es una dieta</h2>
-      <p class="dek">Lo que falla no suele ser el conocimiento: casi todo el mundo sabe que hay que comer más verdura. Lo que falla es el sistema, el contexto y que nadie pregunte qué tal vas.</p>
-    </div>
-    <div class="grid">
-      <div class="phase-stage" aria-hidden="true">
-        <div class="phase" id="phase" data-p="1">
-          <div class="phase-clip"><div class="sunlight"></div></div>
-          <div class="phase-clip"><div class="shadow"></div></div>
-          <div class="lbl" id="phaseLbl">Fase 1 de 4</div>
-        </div>
-      </div>
-      <div class="steps" id="steps">
-        <article class="step" data-p="1">
-          <span class="mini" data-p="1" aria-hidden="true"><i></i></span>
-          <h3>Escuchar antes de proponer</h3>
-          <p>La primera sesión es sobre ti: cómo es tu semana de verdad, a qué hora comes, quién cocina en tu casa, qué has probado antes y por qué se cayó. Sin juicios y sin báscula el primer día.</p>
-        </article>
-        <article class="step" data-p="2">
-          <span class="mini" data-p="2" aria-hidden="true"><i></i></span>
-          <h3>Cambiar tres cosas, no treinta</h3>
-          <p>Salimos con tres cambios concretos y medibles, elegidos porque encajan en tu semana tal y como es hoy. Si algo exige levantarse una hora antes, no entra.</p>
-        </article>
-        <article class="step" data-p="3">
-          <span class="mini" data-p="3" aria-hidden="true"><i></i></span>
-          <h3>Sostenerlo doce semanas</h3>
-          <p>Sesiones de seguimiento y mensajes entre medias. Ajustamos lo que no funciona en la segunda semana, no en el tercer mes. Aquí es donde se gana o se pierde.</p>
-        </article>
-        <article class="step" data-p="4">
-          <span class="mini" data-p="4" aria-hidden="true"><i></i></span>
-          <h3>Soltarte</h3>
-          <p>El objetivo es que dejes de necesitarme. Cuando los tres cambios ya no te cuestan, añadimos los siguientes o cerramos y te vas. Las dos cosas son un buen final.</p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="programs" id="programas">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Qué puedes contratar</h2>
-      <p class="dek">Los precios son los mismos en Bilbao y por videollamada. Si no sabes cuál te encaja, la primera conversación es gratis y sirve precisamente para eso.</p>
-    </div>
-    <div class="layout">
-      <article class="feature">
-        <p class="tag">El programa completo, y el que recomiendo</p>
-        <h3>Acompañamiento de doce semanas</h3>
-        <p class="desc">Sesión inicial, cinco sesiones de seguimiento cada quince días y mensajes entre medias para las dudas que surgen un martes a las nueve de la noche.</p>
-        <ul>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Sesión inicial de 75 minutos con los tres primeros cambios por escrito</li>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Cinco seguimientos de 45 minutos, cada dos semanas</li>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Mensajes entre sesiones, con respuesta en el día</li>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Se puede pagar en tres plazos</li>
-        </ul>
-        <div class="foot">
-          <div class="price" data-edit="precio-programa">Precio a consultar<small>Te lo digo en la primera conversación, sin sorpresas</small></div>
-          <a class="btn solid" href="https://wa.me/34747421853?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20del%20acompa%C3%B1amiento%20de%20doce%20semanas." target="_blank" rel="noopener">Preguntar por el programa</a>
-        </div>
-      </article>
-      <div class="plans">
-        <article class="plan">
-          <div class="top"><h3>Primera conversación</h3><div class="price">Gratis<small>Sin compromiso</small></div></div>
-          <p>Veinte minutos por teléfono o videollamada. Me cuentas qué te pasa y te digo con franqueza si puedo ayudarte y cómo. Si creo que no soy la persona indicada, te oriento a dónde ir.</p>
-          <p class="meta">20 minutos, teléfono o vídeo</p>
-        </article>
-        <article class="plan">
-          <div class="top"><h3>Sesión inicial</h3><div class="price" data-edit="precio-inicial">A consultar<small>Sesión única</small></div></div>
-          <p>La sesión larga donde levantamos el mapa completo: tu semana, tu historia con la comida, tu descanso y tu contexto. Sales con los tres primeros cambios por escrito.</p>
-          <p class="meta">75 minutos, en Bilbao o por videollamada</p>
-        </article>
-        <article class="plan">
-          <div class="top"><h3>Seguimiento suelto</h3><div class="price" data-edit="precio-seguimiento">A consultar<small>Por sesión</small></div></div>
-          <p>Para quien ya hizo el programa y quiere pasar revisión, o para quien va bien sola y solo necesita una mirada de fuera de vez en cuando.</p>
-          <p class="meta">45 minutos</p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="fit" aria-label="Para quién es">
-  <div class="wrap">
-    <div class="cols">
-      <div class="yes">
-        <h3>Esto funciona si…</h3>
-        <ul>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Ya has probado a hacerlo sola y se te ha caído más de una vez</li>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Comes fuera a menudo, o cocinas para más gente que tú</li>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Duermes mal y sospechas que tiene que ver con lo demás</li>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Quieres entender por qué, no que te den una lista</li>
-          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Puedes comprometerte tres meses, no tres semanas</li>
-        </ul>
-      </div>
-      <div class="no">
-        <h3>Y no es para ti si…</h3>
-        <ul>
-          <li><span class="mini" aria-hidden="true"><i></i></span>Buscas perder una cifra concreta antes de una fecha concreta</li>
-          <li><span class="mini" aria-hidden="true"><i></i></span>Quieres una dieta cerrada que seguir sin pensar</li>
-          <li><span class="mini" aria-hidden="true"><i></i></span>Necesitas tratamiento para una patología: eso es cosa de tu médico o de un dietista-nutricionista colegiado, y te acompaño junto a ellos, no en su lugar</li>
-          <li><span class="mini" aria-hidden="true"><i></i></span>Esperas que la solución sea un producto</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="showcase" id="destacados">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Por dónde empezar</h2>
-      <p class="dek">Ocho referencias con su precio, para que montes el pedido sin recorrer las 306. Añade lo que te interese y lo cerramos por WhatsApp.</p>
-    </div>
-  </div>
+<section class="showcase" id="destacados" aria-label="Productos para empezar">
 <div class="ps-defs" aria-hidden="true"><svg><defs><linearGradient id="ps-arcgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2C664" stop-opacity="0"/><stop offset=".5" stop-color="#FCE7AE"/><stop offset="1" stop-color="#E9B44C" stop-opacity="0"/></linearGradient></defs></svg></div>
 <div class="ps-slider" role="region" aria-roledescription="carrusel" aria-label="Productos para empezar" tabindex="0">
   <div class="ps-slides">
@@ -1125,6 +976,149 @@ html.js-motion .pgrid .card.in{opacity:1; transform:none}
   </div>
   <p class="ps-sr" aria-live="polite"></p>
 </div>
+</section>
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <h1 id="h1">Comer bien, <b>sin que sea un proyecto.</b></h1>
+      <p class="sub">Acompañamiento en hábitos de alimentación y descanso, en Bilbao o por videollamada, pensado para durar más de tres semanas.</p>
+      <div class="acts">
+        <a class="btn solid lg" href="https://wa.me/34747421853?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20una%20primera%20cita." target="_blank" rel="noopener">Pedir cita</a>
+        <a class="btn lg" href="#metodo">Cómo trabajo</a>
+      </div>
+    </div>
+    <div class="sky" aria-hidden="true">
+      <div class="corona-wrap"><div class="corona"></div></div>
+      <div class="disc-wrap"><div class="disc"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto" aria-label="Tres cosas antes de empezar">
+  <div class="wrap">
+    <div class="row">
+      <h3>Sin dietas cerradas.</h3>
+      <p>Trabajamos sobre lo que ya comes, no sobre una lista que abandonarás en febrero.</p>
+    </div>
+    <div class="row">
+      <h3>Doce semanas, no tres.</h3>
+      <p>Es lo que tarda un hábito en dejar de necesitar fuerza de voluntad. Menos que eso no es un cambio.</p>
+    </div>
+    <div class="row">
+      <h3>Seguimiento de verdad.</h3>
+      <p>Nos escribimos entre sesiones. No te quedas sola con un PDF de recetas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="method" id="metodo">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Cuatro fases, y ninguna es una dieta</h2>
+      <p class="dek">Lo que falla no suele ser el conocimiento: casi todo el mundo sabe que hay que comer más verdura. Lo que falla es el sistema, el contexto y que nadie pregunte qué tal vas.</p>
+    </div>
+    <div class="grid">
+      <div class="phase-stage" aria-hidden="true">
+        <div class="phase" id="phase" data-p="1">
+          <div class="phase-clip"><div class="sunlight"></div></div>
+          <div class="phase-clip"><div class="shadow"></div></div>
+          <div class="lbl" id="phaseLbl">Fase 1 de 4</div>
+        </div>
+      </div>
+      <div class="steps" id="steps">
+        <article class="step" data-p="1">
+          <span class="mini" data-p="1" aria-hidden="true"><i></i></span>
+          <h3>Escuchar antes de proponer</h3>
+          <p>La primera sesión es sobre ti: cómo es tu semana de verdad, a qué hora comes, quién cocina en tu casa, qué has probado antes y por qué se cayó. Sin juicios y sin báscula el primer día.</p>
+        </article>
+        <article class="step" data-p="2">
+          <span class="mini" data-p="2" aria-hidden="true"><i></i></span>
+          <h3>Cambiar tres cosas, no treinta</h3>
+          <p>Salimos con tres cambios concretos y medibles, elegidos porque encajan en tu semana tal y como es hoy. Si algo exige levantarse una hora antes, no entra.</p>
+        </article>
+        <article class="step" data-p="3">
+          <span class="mini" data-p="3" aria-hidden="true"><i></i></span>
+          <h3>Sostenerlo doce semanas</h3>
+          <p>Sesiones de seguimiento y mensajes entre medias. Ajustamos lo que no funciona en la segunda semana, no en el tercer mes. Aquí es donde se gana o se pierde.</p>
+        </article>
+        <article class="step" data-p="4">
+          <span class="mini" data-p="4" aria-hidden="true"><i></i></span>
+          <h3>Soltarte</h3>
+          <p>El objetivo es que dejes de necesitarme. Cuando los tres cambios ya no te cuestan, añadimos los siguientes o cerramos y te vas. Las dos cosas son un buen final.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="programs" id="programas">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Qué puedes contratar</h2>
+      <p class="dek">Los precios son los mismos en Bilbao y por videollamada. Si no sabes cuál te encaja, la primera conversación es gratis y sirve precisamente para eso.</p>
+    </div>
+    <div class="layout">
+      <article class="feature">
+        <p class="tag">El programa completo, y el que recomiendo</p>
+        <h3>Acompañamiento de doce semanas</h3>
+        <p class="desc">Sesión inicial, cinco sesiones de seguimiento cada quince días y mensajes entre medias para las dudas que surgen un martes a las nueve de la noche.</p>
+        <ul>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Sesión inicial de 75 minutos con los tres primeros cambios por escrito</li>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Cinco seguimientos de 45 minutos, cada dos semanas</li>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Mensajes entre sesiones, con respuesta en el día</li>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Se puede pagar en tres plazos</li>
+        </ul>
+        <div class="foot">
+          <div class="price" data-edit="precio-programa">Precio a consultar<small>Te lo digo en la primera conversación, sin sorpresas</small></div>
+          <a class="btn solid" href="https://wa.me/34747421853?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20del%20acompa%C3%B1amiento%20de%20doce%20semanas." target="_blank" rel="noopener">Preguntar por el programa</a>
+        </div>
+      </article>
+      <div class="plans">
+        <article class="plan">
+          <div class="top"><h3>Primera conversación</h3><div class="price">Gratis<small>Sin compromiso</small></div></div>
+          <p>Veinte minutos por teléfono o videollamada. Me cuentas qué te pasa y te digo con franqueza si puedo ayudarte y cómo. Si creo que no soy la persona indicada, te oriento a dónde ir.</p>
+          <p class="meta">20 minutos, teléfono o vídeo</p>
+        </article>
+        <article class="plan">
+          <div class="top"><h3>Sesión inicial</h3><div class="price" data-edit="precio-inicial">A consultar<small>Sesión única</small></div></div>
+          <p>La sesión larga donde levantamos el mapa completo: tu semana, tu historia con la comida, tu descanso y tu contexto. Sales con los tres primeros cambios por escrito.</p>
+          <p class="meta">75 minutos, en Bilbao o por videollamada</p>
+        </article>
+        <article class="plan">
+          <div class="top"><h3>Seguimiento suelto</h3><div class="price" data-edit="precio-seguimiento">A consultar<small>Por sesión</small></div></div>
+          <p>Para quien ya hizo el programa y quiere pasar revisión, o para quien va bien sola y solo necesita una mirada de fuera de vez en cuando.</p>
+          <p class="meta">45 minutos</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fit" aria-label="Para quién es">
+  <div class="wrap">
+    <div class="cols">
+      <div class="yes">
+        <h3>Esto funciona si…</h3>
+        <ul>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Ya has probado a hacerlo sola y se te ha caído más de una vez</li>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Comes fuera a menudo, o cocinas para más gente que tú</li>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Duermes mal y sospechas que tiene que ver con lo demás</li>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Quieres entender por qué, no que te den una lista</li>
+          <li><span class="mini" data-p="4" aria-hidden="true"><i></i></span>Puedes comprometerte tres meses, no tres semanas</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Y no es para ti si…</h3>
+        <ul>
+          <li><span class="mini" aria-hidden="true"><i></i></span>Buscas perder una cifra concreta antes de una fecha concreta</li>
+          <li><span class="mini" aria-hidden="true"><i></i></span>Quieres una dieta cerrada que seguir sin pensar</li>
+          <li><span class="mini" aria-hidden="true"><i></i></span>Necesitas tratamiento para una patología: eso es cosa de tu médico o de un dietista-nutricionista colegiado, y te acompaño junto a ellos, no en su lugar</li>
+          <li><span class="mini" aria-hidden="true"><i></i></span>Esperas que la solución sea un producto</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="shop" id="tienda">
