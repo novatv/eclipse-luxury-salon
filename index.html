@@ -895,6 +895,7 @@ const revealCards = () => {
   if(!revealIO) return;
   const cards = [...document.querySelectorAll('#sgrid .card:not(.rv-set)')];
   cards.forEach((c, i) => { c.classList.add('rv-set'); c.style.setProperty('--d', `${(i % 8) * 45}ms`); revealIO.observe(c); });
+  setTimeout(() => cards.forEach(c => c.classList.add('in')), 2500);
 };
 
 /* ---------- hero: el eclipse sigue al puntero ---------- */
